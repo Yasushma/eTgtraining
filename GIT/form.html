@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!-- This is how HTML comments look like -->
+<html>
+<!-- the title will appear on the page-->
+<head>
+<title>CBT TRANING </title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+input[type=text], select {
+  width: 50%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[id=phone], select {
+  width: 50%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[id=email], select {
+  width: 50%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ }
+  input[list=other] {
+  width: 50%;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+</style>
+</head>
+<body>
+<header>
+  <h1><b>Sonata Software</b></h1>
+ 
+</header>
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+<form action="http://google.co.in">
+<!-- If we remove this, every thing will move to the left of the page-->
+
+<fieldset>
+    <legend>Register Here</legend>
+<!--Adds a heading to the form-->
+<h1>EMPLOYEE REGISTRATION FOR CBT BASED TRAINING</h1>
+
+Employee ID:
+<!-- Input type text for small texts, specify size -->
+<input type="text" name="id" size=35 maxlength=30 value="" placeholder="idno">
+<!--Adds spaces - remove and see what happens -->
+</br></br>
+
+Employee Name:
+<!-- Input type text for small texts, specify size -->
+<input type="text" name="empname" size=35 maxlength=30 value="" placeholder="full name">
+<!--Adds spaces - remove and see what happens -->
+</br></br>
+
+Contact No:
+<input id="phone" type="tel" name="number" size=35 maxlength=30 placeholder="1234567890" >
+<br></br>
+
+Email:
+<input id="email" type="email" name="mail" size=35 maxlength=30 placeholder="some@gmail.com" >
+<br></br>
+
+
+Course
+<!-- Radio buttons help you choose one out of the many values -->
+<input type="radio" name="exe" value=1>Full time
+<input type="radio" name="exe" value=2>part time
+</p>
+Technolgy
+<p>
+<!--Checkbox lets you select multiple options -->
+<input type="checkbox" name="java">Java
+<input type="checkbox" name="html">HTML
+<input type="checkbox" name="agile">Agile
+<input type="checkbox" name="database">Database
+</p>
+Prefer dates
+<br>
+Start date<input type="date"> &nbsp
+End date<input type="date"> <br></br>
+
+<!--Select box lets you choose one of the multiple dropdown options-->
+Other facilities
+
+<input list="other">
+<datalist id="other">
+<option value=1 >virtual lab
+<option value=2 >Online quiz
+<option value=3 >Online Instructor(to clarify doubts)
+</datalist>
+</select></br></br>
+<label for="myfile">adhar prof:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+</br></br>
+<!--submits the information entered in the form by the user -->
+<input type="submit" value="Submit">
+</fieldset>
+</form>
+<footer>
+  <p>YASUSHMA KOTA<br>
+  <a href="goals.html">yasushmakota167@gmail.com</a>
+  </p>
+  <h5>copyright@2021yasushma</h5>
+</footer>
+</body>
+</html>
