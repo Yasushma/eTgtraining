@@ -1,0 +1,41 @@
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 5px groove;
+  border-color:blue;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: green;
+  color: white;
+}
+header{
+padding: 3px;
+  background-color: red;
+  color: white;
+ 
+}
+.se{
+	font-family:verdana;
+	
+}
+table{
+	 background-color: pink;
+	 border:4px;
+	 border-color:blue;
+	 
+}
+dt{
+	font-family:Tahoma;
+	font-size:20p;
+	color:green;
+}
+
+
+
