@@ -1,0 +1,30 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2>Task Tracking system<br> Login Page</h2>
+            <p>Login o from here to access.</p>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+              <form #taskForm1="ngForm" (ngSubmit)="check(taskForm1.value)">
+
+                  <div class="form-group">
+                     <label for="validationDefault01">User Name</label>
+                     <input type="text" class="form-control" placeholder="User Name" id="name" name="name"  required ngModel>
+                  </div>
+                  <div class="form-group">
+                     <label for="validationDefault02">Password</label>
+                     <input type="password" class="form-control" placeholder="Password" id="password" name="password"  required ngModel >
+                  </div>
+                  <button type="submit" class="btn btn-black">Login</button>
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+               </form>
+            </div>
+         </div>
+      </div>

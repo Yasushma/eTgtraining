@@ -1,0 +1,89 @@
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<div >
+  <div class="row">
+  <nav class=" navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbars" href="#">TaskManager</a>
+      </div>
+      
+      <ul class="nav navbar-nav">
+        <li class="active"><a class="navbars " href="#">Home</a></li>
+        <li class="nav-item">
+
+          <button routerLink="/statuscheck" class="btn btn-success mx-2">SearchStatus</button>
+        
+       </li>
+<li class="nav-item">
+
+<button routerLink="/pri" class="btn btn-success mx-2">assign priority</button>
+
+</li>
+<li class="nav-item">
+
+<button routerLink="/addtask" class="btn btn-success mx-2">Add task</button>
+</li>
+<li class="nav-item">
+
+  <button routerLink="/bookmark" class="btn btn-success mx-2">set-bookmark</button>
+  </li>
+  
+
+      </ul>
+    </div>
+  </nav>
+    
+            
+        </div>
+
+         
+<div class="panel-body">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Task_ID</th>
+        <th>Owner_ID</th>
+        <th>Creator_ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Priority</th>
+        <th>Notes</th>
+        <th>IsBookmarked</th>
+        <th>Created_On</th>
+        <th>Status_Changed_On</th>
+        
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tro of task | async">
+
+       <td>{{tro.taskId}}</td>
+       <td>{{tro.ownerId}}</td>
+       <td>{{tro.creatorId}}</td>
+       <td>{{tro.name}}</td>
+       <td>{{tro.description}}</td>
+       <td>{{tro.status}}</td>
+       <td>{{tro.priority}}</td>
+       <td>{{tro.notes}}</td>
+       <td>{{tro.isBookmarked}}</td>
+       <td>{{tro.createdOn}}</td>
+       <td>{{tro.modifiedOn}}</td>
+       
+
+       <!--- <button (click) ="updateTask(tro.Task_ID)" class ="btn btn-info" style="margin-left: 10px;">Update</button>
+        <button (click)="taskDetails(tro.Task_ID)" class="btn btn-info" style="margin-left: 10px">Details</button>
+      -->
+        </tr>
+    </tbody>
+  </table>
+</div>

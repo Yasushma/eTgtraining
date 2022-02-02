@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let product of products,let num=index">
+        <h2>{{product.name}} / ${{product.price}}</h2>
+        <p> {{product.description}} </p>
+    </li>
+    </ul>
